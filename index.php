@@ -339,7 +339,7 @@ echo "<center><p align='center'><textarea name='aboutbox' id='aboutbox' rows='9'
 			padding: 10px 10px;
 			background-color: white; 
 			font-align: center; ! important;' wrap='hard'>
-Xderm Mini is simple injector tool based on shell script and python commands for OpenWrt by @ryanfauzi1 which help you to inject your OpenWrt connection using VPN injection (SSH/Trojan/Vmess).
+Xderm Mini is simple injector tool based on shell script and python commands for OpenWrt by @tikhonlavrev which help you to inject your OpenWrt connection using VPN injection (SSH/Trojan/Vmess).
 
 =============================================
            xdrtool Command Lists           
@@ -386,7 +386,7 @@ vmess://eyJhZGQiOixxxxxxx
 trojan://user@server:port
 =============================================
 </textarea></p></center>";
-echo '<p style="text-align:center; font-size:85%;">Read more info at <a href="https://github.com/ryanfauzi1/xderm-mini_GUI" target="_blank">Xderm Mini Github Repo</a></p></table>';
+echo '<p style="text-align:center; font-size:85%;">Read more info at <a href="https://github.com/tikhonlavrev/xderm-mini_GUI" target="_blank">Xderm Mini Github Repo</a></p></table>';
 echo '<center>
                                 <input type="submit" name="button6" class="btn geser" id="rmlogin"
                                         value="Remove / Install Login Page"/>
@@ -400,7 +400,7 @@ echo '<center>
 
 echo '<div class="footer slide" style="display: flex; height: 110%; flex-shrink: 0; font-weight: bold; font-size: 80%; font-align: center; ! important; padding-bottom: 10px"><p style="text-align:center">
         Logo & Mods by <a href="https://me.helmiau.my.id" target="_blank">Helmi Amirudin</a> • Theme by <a href="https://www.facebook.com/agussriawan.id" target="_blank">Agus Sriawan</a><br>
-                Main Developer <a href="https://github.com/ryanfauzi1" target="_blank">Ryan Fauzi</a> • Copyright &copy 2021
+                Main Developer <a href="https://github.com/tikhonlavrev" target="_blank">Ryan Fauzi</a> • Copyright &copy 2021
     </div>';
 }
 if($_POST['button2']){
@@ -539,34 +539,34 @@ if (file_exists("login.php") | file_exists("header.php")) {
  echo 'Loginpage Terinstall !';
 } else {
  echo 'Login page is available, now installing online mode !';
- exec('wget -O /www/xderm/login.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/login.php -q');
- exec('wget -O /www/xderm/header.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/header.php -q');
+ exec('wget -O /www/xderm/login.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/login.php -q');
+ exec('wget -O /www/xderm/header.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/header.php -q');
  echo 'Login page installed ! Refresh this page'; }
 }
 if($_POST['button7']){
 echo 'Force Reinstall Xderm Mini !<br/>';
 echo 'Removing old files<br/>';
 if (file_exists("login.php") | file_exists("header.php")) {
-	exec('wget -O /www/xderm/login.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/login.php -q');
-	exec('wget -O /www/xderm/header.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/header.php -q');
+	exec('wget -O /www/xderm/login.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/login.php -q');
+	exec('wget -O /www/xderm/header.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/header.php -q');
 } elseif (file_exists("login.php.xdrtool") | file_exists("header.php.xdrtool")) {
-	exec('wget -O /www/xderm/login.php.xdrtool https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/login.php -q');
-	exec('wget -O /www/xderm/header.php.xdrtool https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/header.php -q');
+	exec('wget -O /www/xderm/login.php.xdrtool https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/login.php -q');
+	exec('wget -O /www/xderm/header.php.xdrtool https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/header.php -q');
 } else {
-	exec('wget -O /www/xderm/login.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/login.php -q');
-	exec('wget -O /www/xderm/header.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/header.php -q');
+	exec('wget -O /www/xderm/login.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/login.php -q');
+	exec('wget -O /www/xderm/header.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/header.php -q');
 }
-exec('wget -O /www/xderm/index.html https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/index.html -q');
-exec('wget -O /www/xderm/xderm-mini https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/xderm-mini -q');
-exec('wget -O /www/xderm/js/jquery-2.1.3.min.js https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/jquery-2.1.3.min.js -q');
-exec('wget -O /www/xderm/img/image.png https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/image.png -q');
-exec('wget -O /www/xderm/img/fav.ico https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/fav.ico -q');
-exec('wget -O /www/xderm/img/ico.png https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/ico.png -q');
-exec('wget -O /www/xderm/img/background.jpg https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/background.jpg -q');
-exec('wget -O /bin/xdrauth https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/adds/xdrauth -q');
+exec('wget -O /www/xderm/index.html https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/index.html -q');
+exec('wget -O /www/xderm/xderm-mini https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/xderm-mini -q');
+exec('wget -O /www/xderm/js/jquery-2.1.3.min.js https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/jquery-2.1.3.min.js -q');
+exec('wget -O /www/xderm/img/image.png https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/image.png -q');
+exec('wget -O /www/xderm/img/fav.ico https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/fav.ico -q');
+exec('wget -O /www/xderm/img/ico.png https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/ico.png -q');
+exec('wget -O /www/xderm/img/background.jpg https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/background.jpg -q');
+exec('wget -O /bin/xdrauth https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/adds/xdrauth -q');
 exec('chmod +x /bin/xdrauth');
-exec('wget -O /bin/xdrtool https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/adds/xdrtool -q');
-exec('wget -O /www/xderm/index.php https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main/index.php -q');
+exec('wget -O /bin/xdrtool https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/adds/xdrtool -q');
+exec('wget -O /www/xderm/index.php https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main/index.php -q');
 exec('chmod +x /bin/xdrtool');
 echo 'Installing new files<br/>';
 echo 'Installation done ! Refresh this page<br/>';
