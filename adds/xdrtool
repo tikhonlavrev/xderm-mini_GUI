@@ -4,7 +4,7 @@
 #   Don't rename this file
 #--------------------------------------------------------
 #   This script is used for setting up
-#   Xderm-Mini GUI for OpenWrt by ryanfauzi1
+#   Xderm-Mini GUI for OpenWrt by tikhonlavrev
 #   Installation script by helmiau a.k.a Helmi Amirudin
 #   my profile page https://me.helmiau.my.id
 #   my github https://github.com/helmiau
@@ -43,7 +43,7 @@ v30="d7e233bb8769540238c1e06ec0c3d3f7047ec003"
 
 #-- Uneditable Info for script checking purpose
 INSTALLERNAME="$(basename "$0")"
-CHECKNET="http://github.com/ryanfauzi1/xderm-mini_GUI"
+CHECKNET="http://github.com/tikhonlavrev/xderm-mini_GUI"
 XDERMPATH="/www/xderm"
 XDERMPATHBAK="/www/xdermbak"
 XDERMCONFIGBAK="/www/xderm-config"
@@ -74,8 +74,8 @@ else
 fi
 LOGINOW=$(if [ -e /www/xderm/login.php ]; then echo -e "${GRE}Available"; else echo -e "${RED}Unavailable"; fi)
 LOGINOWBAK=$(if [ -e /www/xderm/login.php.xdrtool ]; then echo -e "${GRE}Available"; else echo -e "${RED}Unavailable"; fi)
-URL="https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/main"
-OLDURL="https://raw.githubusercontent.com/ryanfauzi1/xderm-mini_GUI/"
+URL="https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/main"
+OLDURL="https://raw.githubusercontent.com/tikhonlavrev/xderm-mini_GUI/"
 SCRIPTVER="4.5"
 
 
